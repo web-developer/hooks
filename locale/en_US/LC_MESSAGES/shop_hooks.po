@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: shop/plugins/hooks\n"
+"POT-Creation-Date: 2015-04-29 01:52+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator:  shop/plugins/hooks\n"
+"Language-Team:  shop/plugins/hooks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: en_US\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:5
+msgid "Enable"
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:8
+msgid "Set this checkbox for enable the plugin"
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:11
+msgid "Hooks template"
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:13
+msgid "Use %hookname% for insert hook name."
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/shopHooks.plugin.php:207
+msgid "Use rights.config hook for adding new rule."
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
+msgid "Displays position of hooks"
+msgstr ""
+
+#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
+msgid "Hooks"
+msgstr ""

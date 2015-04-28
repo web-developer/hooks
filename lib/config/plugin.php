@@ -1,0 +1,48 @@
+<?php
+
+return array(
+    'name' => 'Hooks',
+    'version' => '0.0.1',
+    'vendor' => 963918,
+    'handlers' => array(
+        //Frontend
+        'frontend_cart' => 'frontend_cart',
+        'frontend_category' => 'frontend_category',
+        'frontend_checkout' => 'frontend_checkout',
+        'frontend_error' => 'frontend_error',
+        'frontend_footer' => 'frontend_footer',
+        'frontend_head' => 'frontend_head',
+        'frontend_header' => 'frontend_header',
+        'frontend_homepage' => 'frontend_homepage',
+        'frontend_my' => 'frontend_my',
+        'frontend_my_affiliate' => 'frontend_my_affiliate',
+        'frontend_my_nav' => 'frontend_my_nav',
+        'frontend_my_order' => 'frontend_my_order',
+        'frontend_my_orders' => 'frontend_my_orders',
+        'frontend_nav' => 'frontend_nav',
+        'frontend_nav_aux' => 'frontend_nav_aux',
+        'frontend_product' => 'frontend_product',
+        'frontend_search' => 'frontend_search',
+        //Backend    
+        'backend_category_dialog' => 'backend_category_dialog',
+        'backend_customer' => 'backend_customer',
+        'backend_customers' => 'backend_customers',
+        'backend_customers_list' => 'backend_customers_list',
+        'backend_menu' => 'backend_menu',
+        'backend_order' => 'backend_order',
+        'backend_order_edit' => 'backend_order_edit',
+        'backend_orders' => 'backend_orders',
+        'backend_product' => 'backend_product',
+        'backend_product_edit' => 'backend_product_edit',
+        'backend_products' => 'backend_products',
+        'backend_reports' => 'backend_reports',
+        'backend_set_dialog' => 'backend_set_dialog',
+        'backend_settings' => 'backend_settings',
+        'backend_settings_discounts' => 'backend_settings_discounts',
+        'backend_tutorial' => 'backend_tutorial',
+        //Rights        
+        'rights.config' => 'rights_config',
+    ),
+    'description' => 'Displays position of hooks',
+    'img' => 'img/plugin.png',
+);
