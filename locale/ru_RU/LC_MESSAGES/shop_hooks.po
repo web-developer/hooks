@@ -38,8 +38,8 @@ msgid "Use rights.config hook for adding new rule."
 msgstr "Используйте rights.config хук для добавления новых правил"
 
 #: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
-msgid "Displays position of hooks"
-msgstr "Отображает позиции вывода хуков"
+msgid "Displays positions and names of the hooks"
+msgstr "Отображает позиции вывода и имена хуков"
 
 #: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
 msgid "Hooks"

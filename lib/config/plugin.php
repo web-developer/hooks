@@ -43,6 +43,6 @@ return array(
         //Rights        
         'rights.config' => 'rights_config',
     ),
-    'description' => 'Displays position of hooks',
+    'description' => 'Displays positions and names of the hooks',
     'img' => 'img/plugin.png',
 );

@@ -35,9 +35,5 @@ msgid "Use rights.config hook for adding new rule."
 msgstr ""
 
 #: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
-msgid "Displays position of hooks"
-msgstr ""
-
-#: /wa-apps/shop/plugins/hooks/lib/config/settings.php:18
 msgid "Hooks"
 msgstr ""
