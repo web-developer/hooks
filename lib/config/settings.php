@@ -12,5 +12,5 @@ return array(
         'value' => '<span style="color:red;">%hookname%</span>',
         'description' => _wp('Use %hookname% for insert hook name.'),
         'control_type' => waHtmlControl::TEXTAREA
-    ),     
+    ),
 );
