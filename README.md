@@ -42,3 +42,7 @@ Use this plugin for designing, testing, development of new interfaces and plugin
     backend_tutorial<br>
 <br>
 rights.config<br>
+<br>
+  <b>How to use:</b><br>
+Put all folders and files to /wa-apps/shop/plugins/hooks/<br>
+Enable the plugin in "Installer" app.<br>
