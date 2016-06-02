@@ -1,4 +1,4 @@
-<h1>Tha Hooks - plugin for Webasyst Shop-Script 7</h1>
+<h1>The Hooks - plugin for Webasyst Shop-Script 7</h1>
 Displays output position of the hooks for frontend and backend.<br>
 Before start developing the plugin, will help you to quickly find places in frontend or backend where can use plugin code.<br>
 In the process of creating a new template for Shop-Script 7, will help to check, what the hooks are present and missing.<br>
