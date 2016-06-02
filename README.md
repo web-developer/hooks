@@ -46,3 +46,7 @@ rights.config<br>
   <b>How to use:</b><br>
 Put all folders and files to /wa-apps/shop/plugins/hooks/<br>
 Enable the plugin in "Installer" app.<br>
+<br>
+<b>Notice:</b><br>
+Support for this plugin is not provided.
+Send your ideas about the development of a plugin.
