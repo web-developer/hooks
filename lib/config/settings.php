@@ -9,7 +9,7 @@ return array(
     ),
     'template' => array(
         'title' => _wp('Hooks template'),
-        'value' => '<span style="color:red;">%hookname%</span>',
+        'value' => '<span style="color:red;" title="%hookname%">%hookname%</span>',
         'description' => _wp('Use %hookname% for insert hook name.'),
         'control_type' => waHtmlControl::TEXTAREA
     ),

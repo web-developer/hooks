@@ -2,7 +2,7 @@
 
 return array(
     'name' => 'Hooks',
-    'version' => '0.0.1',
+    'version' => '0.0.2',
     'vendor' => 963918,
     'handlers' => array(
         //Frontend
@@ -23,7 +23,7 @@ return array(
         'frontend_nav_aux' => 'frontend_nav_aux',
         'frontend_product' => 'frontend_product',
         'frontend_search' => 'frontend_search',
-        //Backend    
+        //Backend
         'backend_category_dialog' => 'backend_category_dialog',
         'backend_customer' => 'backend_customer',
         'backend_customers' => 'backend_customers',
@@ -40,7 +40,7 @@ return array(
         'backend_settings' => 'backend_settings',
         'backend_settings_discounts' => 'backend_settings_discounts',
         'backend_tutorial' => 'backend_tutorial',
-        //Rights        
+        //Rights
         'rights.config' => 'rights_config',
     ),
     'description' => 'Displays positions and names of the hooks',

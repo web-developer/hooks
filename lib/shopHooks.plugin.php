@@ -1,71 +1,87 @@
 <?php
 
-class shopHooksPlugin extends shopPlugin {
-
+class shopHooksPlugin extends shopPlugin
+{
     //Frontend
-    public function frontend_cart() {
+    public function frontend_cart()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_category() {
+    public function frontend_category()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_checkout() {
+    public function frontend_checkout()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_error() {
+    public function frontend_error()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_footer() {
+    public function frontend_footer()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_head() {
-        if (!$this->isPluginEnabled())
-            return;
-        return '<!-- ' . $this->getHookContent(__FUNCTION__) . ' -->';
+    public function frontend_head()
+    {
+        if ($this->isPluginEnabled()) {
+            return '<!-- '.$this->getHookContent(__FUNCTION__).' -->';
+        }
     }
 
-    public function frontend_header() {
+    public function frontend_header()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_homepage() {
+    public function frontend_homepage()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_my() {
+    public function frontend_my()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_my_affiliate() {
+    public function frontend_my_affiliate()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_my_nav() {
+    public function frontend_my_nav()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_my_order() {
+    public function frontend_my_order()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_my_orders() {
+    public function frontend_my_orders()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_nav() {
+    public function frontend_nav()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_nav_aux() {
+    public function frontend_nav_aux()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function frontend_product() {
+    public function frontend_product()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'menu',
                     'cart',
@@ -74,16 +90,19 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function frontend_search() {
+    public function frontend_search()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
     //Backend
-    public function backend_category_dialog() {
+    public function backend_category_dialog()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function backend_customer() {
+    public function backend_customer()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'info_section',
                     'name_suffix',
@@ -92,20 +111,23 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_customers() {
+    public function backend_customers()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'sidebar_top_li',
-                    'sidebar_section'
+                    'sidebar_section',
         ));
     }
 
-    public function backend_customers_list() {
+    public function backend_customers_list()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'top_li',
         ));
     }
 
-    public function backend_menu() {
+    public function backend_menu()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'aux_li',
                     'core_li',
@@ -114,7 +136,8 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_order() {
+    public function backend_order()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'title_suffix',
                     'action_button',
@@ -123,11 +146,13 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_order_edit() {
+    public function backend_order_edit()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function backend_orders() {
+    public function backend_orders()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'sidebar_top_li',
                     'sidebar_bottom_li',
@@ -135,7 +160,8 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_product() {
+    public function backend_product()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'title_suffix',
                     'action_button',
@@ -146,14 +172,16 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_product_edit() {
+    public function backend_product_edit()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'images',
                     'related',
         ));
     }
 
-    public function backend_products() {
+    public function backend_products()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'sidebar_top_li',
                     'sidebar_section',
@@ -165,17 +193,20 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_reports() {
+    public function backend_reports()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'menu_li',
         ));
     }
 
-    public function backend_set_dialog() {
+    public function backend_set_dialog()
+    {
         return $this->getHookContent(__FUNCTION__);
     }
 
-    public function backend_settings() {
+    public function backend_settings()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'sidebar_top_li',
                     'sidebar_middle_li',
@@ -183,17 +214,19 @@ class shopHooksPlugin extends shopPlugin {
         ));
     }
 
-    public function backend_settings_discounts() {
-        if (!$this->isPluginEnabled())
-            return;
-        return array(
-            'name' => __FUNCTION__,
-            'url' => '/README',
-            'html' => $this->getHookContent(__FUNCTION__)
+    public function backend_settings_discounts()
+    {
+        if ($this->isPluginEnabled()) {
+            return array(
+        'name' => __FUNCTION__,
+        'url' => '/README',
+        'html' => $this->getHookContent(__FUNCTION__),
         );
+        }
     }
 
-    public function backend_tutorial() {
+    public function backend_tutorial()
+    {
         return $this->getHookArrayContent(__FUNCTION__, array(
                     'sidebar_li',
                     'sidebar_block',
@@ -201,18 +234,21 @@ class shopHooksPlugin extends shopPlugin {
     }
 
     //Rights
-    public function rights_config($rights_obj) {
-        if (!$this->isPluginEnabled())
-            return;
-        $rights_obj->addItem('hook_test', _wp('Use rights.config hook for adding new rule.'));
+    public function rights_config($rights_obj)
+    {
+        if ($this->isPluginEnabled()) {
+            $rights_obj->addItem('hook_test', _wp('Use rights.config hook for adding new rule.'));
+        }
     }
 
-    private function getHookContent($function_name = "") {
+    private function getHookContent($function_name = '')
+    {
         $settings = $this->getSettings();
         if (isset($settings['enabled']) && $settings['enabled'] > 0) {
             $template = $settings['template'];
             if (!empty($template)) {
                 $template = str_replace('%hookname%', $function_name, $template);
+
                 return $template;
             } else {
                 return $function_name;
@@ -220,23 +256,26 @@ class shopHooksPlugin extends shopPlugin {
         }
     }
 
-    private function getHookArrayContent($function_name = "", $hooks_array = array()) {
-        if (!$this->isPluginEnabled())
-            return;
-        $hook_array = array();
-        foreach ($hooks_array as $hook_name) {
-            $hook_array[$hook_name] = $this->getHookContent($function_name . '.' . $hook_name);
+    private function getHookArrayContent($function_name = '', $hooks_array = array())
+    {
+        if ($this->isPluginEnabled()) {
+            $hook_array = array();
+            foreach ($hooks_array as $hook_name) {
+                $hook_array[$hook_name] = $this->getHookContent($function_name.'.'.$hook_name);
+            }
+
+            return $hook_array;
         }
-        return $hook_array;
     }
 
-    private function isPluginEnabled() {
+    private function isPluginEnabled()
+    {
         $enabled = false;
         $settings = $this->getSettings();
         if (isset($settings['enabled']) && $settings['enabled'] > 0) {
             $enabled = true;
         }
+
         return $enabled;
     }
-
 }
